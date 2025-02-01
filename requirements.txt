@@ -1,0 +1,5 @@
+Python
+moviepy
+SpeechRecognition
+Transformers (fackbook/ bart=large=cnn)
+Torch
