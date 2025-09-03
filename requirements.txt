@@ -1,5 +1,5 @@
 moviepy==1.0.3
-whisper==1.0.0
+speechRecognition==3.8.1
 transformers==4.21.1
 torch==1.12.1
 streamlit==1.12.0
