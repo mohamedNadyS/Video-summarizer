@@ -2,7 +2,7 @@ import moviepy.editor as mp
 from whisper import load_model
 from transformers import BartTokenizer, BartForConditionalGeneration  
 import streamlit as st
-#import ffmpeg
+import ffmpeg
 import tempfile
 import os
 import yt_dlp
