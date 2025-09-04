@@ -4,5 +4,5 @@ transformers==4.44.0
 torch>=2.0.0
 streamlit>=1.28.0
 ffmpeg-python==0.2.0
-yt-dlp>=2024.8.0
+yt-dlp>=2023.12.30
 numpy<2.0.0
