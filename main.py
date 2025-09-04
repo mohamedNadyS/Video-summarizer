@@ -176,7 +176,7 @@ def video_summarizer(video_path, ratio=30):
                 chunk_max_words = min(200, len(chunk.split()) // 3)
                 summary_ids = model.generate(inputs, 
                                            max_length=chunk_max_words + 50,
-                                           min_length=min(20, chunk_max_words),
+                                           min_length=min(200, chunk_max_words),
                                            length_penalty=1.0,
                                            num_beams=4,
                                            early_stopping=True)
@@ -273,6 +273,7 @@ def main():
     
     elif videoType == "URL":
         url = st.text_input("Enter video URL (YouTube, etc.)")
+        note = st.info("if 403 forbidden error happened try open source video that do NOT need cookies or log in like archive.org or download the youtube video using downr.org then upload it using file option")
         
         summary_percentage = st.slider(
             "Summary length (% of original transcript)",
