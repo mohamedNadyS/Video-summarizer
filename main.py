@@ -28,8 +28,8 @@ collected_text = []
 @st.cache_resource
 def load_models():
     try:
-        tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base-cnn")
-        bart_model = AutoModelForSeq2SeqLM.from_pretrained("facebook/bart-base-cnn")
+        tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
+        bart_model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
         return tokenizer, bart_model
     except Exception as e:
         st.error(f"Error loading models: {str(e)}")
