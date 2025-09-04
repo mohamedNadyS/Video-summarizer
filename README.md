@@ -1,4 +1,4 @@
-# Video to Text and Summarization Script
+# Video summarization app
 
 ## Overview
 
